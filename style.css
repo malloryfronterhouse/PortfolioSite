@@ -64,13 +64,17 @@ h2 {
     /* text-decoration: underline; */
 }
 
-#blurb {
-    
-}
 
 #aside {
     font-size: 1rem;
     margin: 50px;
+}
+
+#experienceHeading {
+    color: #B1BCA0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 1px gray;
 }
 
 footer {
@@ -88,4 +92,28 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #E1AD9D;
     text-shadow: 1.5px 1.5px 1.5px gray;
+}
+
+#pageTwo {
+    background-color: #B1BCA0;
+}
+
+#linkToPage {
+    font-size: 5rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-shadow: 1.5px 1.5px 1.5px gray;
+    animation-name: textAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textAnimation {
+    0% {margin-top: auto;}
+    25% {margin-top: 50px;}
+    50% {margin-top: 100px;}
+    75% {margin-top: 50px;}
+    100% {margin-top: auto;}
 }
