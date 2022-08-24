@@ -5,12 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/iconImage.png">
-    <title>Mallory's Cover Page</title>
+    <!-- <link rel="prev" href="./index2.html"> -->
+    <link rel="icon" href="./iconImage.png">
+    <title>Mallory's Portfolio</title>
 </head>
-<body id="pageTwo">
-    <div id="coverPage">
-        <a href="./index.html" id="linkToPage">Welcome to Mallory's Portfolio!</a>
-    </div>
+<body>
+    <nav>
+        <ul>
+          <a href="./index.html" id="homeLink">Home</a>
+          <a href="#aboutMe" id="aboutLink" onclick="routeToAbout()">About Me</a>
+          <a href="#experienceDiv" id="experienceLink">Experience</a>
+        </ul>
+      </nav>
+      <h1 id="mainHeading">Mallory Fronterhouse</h1>
+      <img src="./MalPic.jpg" alt="Mallory" id="malPic"/>
+      <hr>
+      <br>
+      <div>
+        <section id="aboutMe">
+          <h2>About Me</h2>
+          <p id="blurb">Hello! I am a young up-and-coming software developer. I am proficient in HTML/CSS, JavaScript, and C#. I attended the coding bootcamp through Eleven Fifty Academy. I am local to the Indianapolis metropolitan area where I live with my two daughters, Nova and Stella. We have a silly, lovable red-nose Pit Bull named Blue as well! In my spare time I enjoy quality time with my kids, reading, live music, and time spent with family/friends. I hope you will enjoy perusing my portfolio. Please contact me with any further inquiries!</p>
+          <aside id="aside">*The link to my contact information can be found in the footer!*</aside> 
+        </section>
+      </div>
+      <hr>
+      <br>
+      <div id="experienceDiv">
+        <h2 id="experienceHeading">Experience</h2>
+        <p id="experienceBlurb">Here are some of my favorite projects! Feel free to peruse them, and if you'd like to see a comprehensive list of all projects they will found on GitHub located under repositories!</p>
+        <div id="experienceSlider">
+          <img id="slide" name="slide" width=" 400" height="200">
+
+        </div>
+      </div>
+      <footer>
+        <ul>
+          <a href="https://github.com/malloryfronterhouse" target="_blank">Github</a>
+          <a href="instagram">Instagram</a>
+          <a href="linkedin">LinkedIn</a>
+          <p id="copyright">Copyright &copy 2022 by Mallory Fronterhouse</p>
+        </ul>
+      </footer>
 </body>
+<scritpt src="./script.js">
+  let i = 0; 
+  let images = [];
+  let time = 3000;
+
+  images[0] = 'image1.jfif'
+  images[1] = 'image2.jpg'
+  image[2] = 'image3.jpg'
+
+  function changeImg() {
+    document.slide.src = images[i];
+
+    if(i < images.length - 1){
+      i++;
+    } else {
+      i = 0;
+    }
+    setTimeout("changeImg()", time);
+
+    document.appendChild('slide')
+  }
+  window.onload = changeImg;
+</scritpt>
 </html>
