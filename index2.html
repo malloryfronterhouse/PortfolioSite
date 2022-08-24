@@ -34,8 +34,31 @@
         <h2 id="experienceHeading">Experience</h2>
         <p id="experienceBlurb">Here are some of my favorite projects! Feel free to peruse them, and if you'd like to see a comprehensive list of all projects they will found on GitHub located under repositories!</p>
         <div id="experienceSlider">
-          <img id="slide" name="slide" width=" 400" height="200">
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://www.shutterstock.com/image-photo/happy-young-woman-sitting-on-sofa-2018571389" style="width: 100%">
+            <div class="text">Project One</div>
+          </div>
 
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://www.shutterstock.com/image-photo/young-hispanic-girl-smiling-happy-standing-1902846046" style="width: 100%">
+            <div class="text">Project Two</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://www.shutterstock.com/image-photo/prints-text-on-laptop-brunette-businesswoman-1897996537" style="width: 100%">
+            <div class="text">Project Three</div>
+          </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10094;</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
       <footer>
@@ -48,7 +71,7 @@
       </footer>
 </body>
 <scritpt src="./script.js">
-  let i = 0; 
+  <!-- let i = 0; 
   let images = [];
   let time = 3000;
 
@@ -68,6 +91,6 @@
 
     document.appendChild('slide')
   }
-  window.onload = changeImg;
+  window.onload = changeImg; -->
 </scritpt>
 </html>
