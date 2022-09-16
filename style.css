@@ -3,6 +3,11 @@ body {
     background-color: whitesmoke;
 }
 
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
 nav {
     background-color: black;
     margin-right: -10px;
@@ -47,7 +52,9 @@ a:hover {
     border-radius: 125px;
     margin-top: 35px;
 }
-
+.aboutMeDiv {
+    background-color: lightgrey;
+}
 
 
 #aboutMe {
@@ -88,8 +95,9 @@ h2 {
 }
 
 .carousel-item img {
-    width: 300px;
+    width: 400px;
     height: 400px;
+    margin-bottom: 50px;
 }
 
 .portfolio-image {
@@ -106,16 +114,33 @@ h5 {
 .slider-blurb {
     color: black;
     font-size: 1rem;
+}
 
+.skillsContainer {
+    background-color: lightgray;
+}
+
+.skillsHeading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.skillsList {
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.25rem;
 }
 
 footer {
     background-color: black;
-    margin-right: -10px;
-    margin-left: -10px;
     height: 90px;
     box-shadow: 1px 1px 1px gray;
     padding: 5px;
+    posiition: absolute;
+    bottom: 0;
+    width: 100%;
+    /* position: relative; */
 }
 
 #copyright {

@@ -12,6 +12,7 @@
     <title>Mallory's Portfolio</title>
 </head>
 <body>
+  <div id="pageContainer">
     <nav>
         <ul>
           <a href="./index.html" id="homeLink">Home</a>
@@ -21,17 +22,15 @@
       </nav>
       <h1 id="mainHeading">Mallory Fronterhouse</h1>
       <img src="./MalPic.jpg" alt="Mallory" id="malPic"/>
-      <hr>
-      <br>
-      <div>
+
+      <div class="aboutMeDiv">
         <section id="aboutMe">
           <h2>About Me</h2>
           <p id="blurb">Hello! I am a young up-and-coming software developer. I am proficient in HTML/CSS, JavaScript, and C#. I attended the coding bootcamp through Eleven Fifty Academy. I am local to the Indianapolis metropolitan area where I live with my two daughters, Nova and Stella. We have a silly, lovable red-nose Pit Bull named Blue as well! In my spare time I enjoy quality time with my kids, reading, live music, and time spent with family/friends. I hope you will enjoy perusing my portfolio. Please contact me with any further inquiries!</p>
           <aside id="aside">*The link to my contact information can be found in the footer!*</aside> 
         </section>
       </div>
-      <hr>
-      <br>
+
       <div id="experienceDiv">
         <h2 id="experienceHeading">Experience</h2>
         <p id="experienceBlurb">Here are some of my favorite projects! Feel free to peruse them, and if you'd like to see a comprehensive list of all projects they will found on GitHub located under repositories!</p>
@@ -63,7 +62,7 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div> -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -101,6 +100,24 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <section class="skillsContainer">
+        <h1 class="skillsHeading">My Skills</h1>
+        <ul class="skillsList">
+          <li>Markdown</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>BootStrap</li>
+          <li>C#</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Front-End Development</li>
+          <li>Back-end Engineering</li>
+          <li>Git and GitHub</li>
+          <li>AWS Certified Cloud Practioner</li>
+        </ul>
+      </section>
+      
       <footer>
         <ul>
           <a href="https://github.com/malloryfronterhouse" target="_blank">Github</a>
@@ -109,6 +126,7 @@
           <p id="copyright">Copyright &copy 2022 by Mallory Fronterhouse</p>
         </ul>
       </footer>
+      </div>
 </body>
 <scritpt src="./script.js">
   <!-- let i = 0; 
